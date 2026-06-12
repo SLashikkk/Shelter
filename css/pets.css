@@ -1,5 +1,9 @@
 @import url("variables.css");
 
+.header__container {
+  padding: 28px 40px 30px;
+}
+
 .logo__title,
 .menu__link {
   color: var(--color-dark-l);
@@ -25,6 +29,10 @@
 
 .our-friends {
   background-color: var(--color-light-l);
+}
+
+.our-friends__container {
+  gap: 60px;
 }
 
 .cards__box {
