@@ -27,10 +27,43 @@
   background-color: var(--color-light-l);
 }
 
-.cards-box {
+.cards__box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-gap: 30px 40px;
   justify-content: center;
-  
+}
+
+.pagination__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid #F1CDB3;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-size: 20px;
+  color: var(--color-dark-3xl);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination__btn--current {
+  background-color: var(--color-primary); 
+  border-color: var(--color-primary);
+  cursor: default; 
+}
+
+.pagination__btn:disabled {
+  border-color: var(--color-dark-s);
+  color: var(--color-dark-s);
 }
