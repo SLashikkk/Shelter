@@ -1,0 +1,24 @@
+@import url("variables.css");
+
+.logo__title,
+.menu__link {
+  color: var(--color-dark-l);
+}
+
+.logo__subtitle {
+  color: var(--color-dark-3xl);
+}
+
+.menu__link--active {
+  color: var(--color-dark-3xl);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.menu__item:nth-child(2) .menu__link {
+  padding-bottom: 3px;
+  cursor: default;
+}
+
+.menu__item:first-child .menu__link {
+  cursor: pointer;
+}

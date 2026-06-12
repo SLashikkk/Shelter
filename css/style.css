@@ -78,6 +78,10 @@ body::-webkit-scrollbar {
   gap: 35px;
 }
 
+.menu__link {
+  user-select: none;
+}
+
 .menu__item:first-child .menu__link {
   padding-bottom: 3px;
   cursor: default;
@@ -86,7 +90,6 @@ body::-webkit-scrollbar {
 .menu__link--active {
   color: var(--color-light-s);
   border-bottom: 3px solid var(--color-primary);
-  user-select: none;
 }
 
 .not-only__container {
