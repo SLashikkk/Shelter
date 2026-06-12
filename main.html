@@ -13,18 +13,20 @@
       <header class="header">
         <div class="container header__container">
           <div class="header__logo">
-            <h1 class="logo__title">Cozy House</h1>
-            <p class="logo__subtitle">Shelter for pets in Boston</p>
+            <a href="#">
+              <h1 class="logo__title">Cozy House</h1>
+              <p class="logo__subtitle">Shelter for pets in Boston</p>
+            </a>
           </div>
           <nav class="header__menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#about" class="menu__link menu__link--active"
+                <a href="#" class="menu__link menu__link--active"
                   >About the shelter</a
                 >
               </li>
               <li class="menu__item">
-                <a href="#our-friends" class="menu__link">Our pets</a>
+                <a href="pets.html" class="menu__link">Our pets</a>
               </li>
               <li class="menu__item">
                 <a href="#help" class="menu__link">Help the shelter</a>
@@ -220,14 +222,16 @@
               Name&nbsp;of&nbsp;the&nbsp;bank&nbsp;/&nbsp;Type&nbsp;of&nbsp;bank&nbsp;account
             </h5>
             <button type="button" class="donation__card-btn">
-              <img
-                class="donation__card-icon"
-                src="./svg/credit-card.svg"
-                alt="Credit card icon"
-              />
-              <span class="donation__card-number">
-                8380&nbsp;2880&nbsp;8028&nbsp;8791&nbsp;7435
-              </span>
+              <a href="#">
+                <img
+                  class="donation__card-icon"
+                  src="./svg/credit-card.svg"
+                  alt="Credit card icon"
+                />
+                <span class="donation__card-number">
+                  8380&nbsp;2880&nbsp;8028&nbsp;8791&nbsp;7435
+                </span>
+              </a>
             </button>
             <p class="donation__legal">
               Legal information and lorem ipsum dolor sit amet, consectetur
@@ -241,6 +245,43 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
+        <div class="footer__contacts">
+          <h5 class="footer__title">For questions and suggestions</h5>
+          <a href="mailto:email@shelter.com" class="footer__link">
+            <img class="footer__icon" src="./svg/mail.svg" alt="mail" />
+            <span class="footer__text">email@shelter.com</span>
+          </a>
+          <a href="tel:+136745677554" class="footer__link">
+            <img class="footer__icon" src="./svg/phone.svg" alt="phone" />
+            <span class="footer__text">+13 674 567 75 54</span>
+          </a>
+        </div>
+        <div class="footer__locations">
+          <h5 class="footer__title footer__title--mobile">
+            We are waiting for your visit
+          </h5>
+          <a
+            href="https://www.google.com/maps/"
+            target="_blank"
+            class="footer__link"
+          >
+            <img class="footer__icon" src="./svg/pin.svg" alt="footer icon" />
+            <span class="footer__text"
+              >1 Central Street, Boston (entrance from the store)</span
+            >
+          </a>
+          <a
+            href="https://www.google.com/maps/"
+            target="_blank"
+            class="footer__link"
+          >
+            <img class="footer__icon" src="./svg/pin.svg" alt="footer icon" />
+            <span class="footer__text">18 South Park, London</span>
+          </a>
+        </div>
+        <div class="footer__image-wrapper">
+          <img src="./img/footer-puppy.png" alt="footer sleeping puppy" />
+        </div>
       </div>
     </footer>
     <script type="module" src="js/main.js"></script>
