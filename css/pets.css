@@ -22,3 +22,15 @@
 .menu__item:first-child .menu__link {
   cursor: pointer;
 }
+
+.our-friends {
+  background-color: var(--color-light-l);
+}
+
+.cards-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 30px 40px;
+  justify-content: center;
+  
+}
