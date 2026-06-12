@@ -300,10 +300,13 @@ h3 {
 
 #in-addition {
   background-color: var(--color-light-l);
+  display: flex;
+  justify-content: center;
 }
 
 .in-addition__container {
   display: flex;
+  justify-content: center;
   align-items: center;
   max-width: 915px;
   column-gap: 30px;
