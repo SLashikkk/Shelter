@@ -329,6 +329,7 @@ h3 {
 }
 
 .donation__card-btn {
+  display: flex;
   padding: 10px 15px;
   border-radius: 9px;
   background: var(--color-primary);
@@ -337,10 +338,6 @@ h3 {
   width: 349px;
   transition-duration: 1s;
   cursor: pointer;
-}
-
-.donation__card-btn a {
-  display: flex;
 }
 
 .donation__card-number {

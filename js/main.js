@@ -1,1 +1,1 @@
-console.log(110/110)
+console.log("110/110")
