@@ -85,6 +85,34 @@
   color: var(--color-dark-s);
 }
 
+/*responsive*/
+@media (max-width: 768px) {
+  .header__container {
+    padding: 28px 30px 30px;
+  }
+  .our-friends__container {
+    align-items: center;
+    padding: 80px 30px 78px;
+    gap: 30px;
+  }
+
+  .cards__box {
+    max-width: 580px;
+    max-height: 1365px;
+    overflow: hidden;
+    gap: 30px 40px;
+  }
+
+  .card {
+    max-width: 270px;
+  }
+
+  .pagination {
+    margin-top: 10px;
+  }
+}
+
+/*hover*/
 @media (hover: hover) {
   a:hover {
     color: var(--color-dark-3xl);
