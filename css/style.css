@@ -440,6 +440,37 @@ margin: 0 auto;
 width: 569px;
 height: 593px;
 }
+
+  .about__container {
+    flex-wrap: wrap-reverse;
+    gap: 80px;
+    padding: 80px 40px 96px;
+  }
+
+  .our-friends__container {
+    padding: 78px 30px 100px;
+  }
+
+  .our-friends__slider {
+    gap: 12px;
+  }
+
+  .our-friends__slider-track {
+    gap: 40px;
+  }
+
+  .help__container {
+        padding: 80px 30px 100px;
+  }
+
+  .help__list {
+    column-gap: 60px;
+  }
+
+  .help__item {
+  width: 170px;
+  height: 113px;
+  }
 }
 
 
