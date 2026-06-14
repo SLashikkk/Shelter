@@ -601,7 +601,7 @@ h3 {
   }
 
   .about__container {
-    padding: 42px 25px 62px;
+    padding: 42px 25px 42px;
     gap: 42px;
   }
 
@@ -622,6 +622,57 @@ h3 {
 
   .about__img {
     width: 260px;
+  }
+
+  .our-friends__container {
+    padding: 40px 15px 42px;
+    gap: 40px;
+  }
+
+  .our-friends__slider {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .card {
+    order: 1;
+    width: 100%;
+  }
+
+  .our-friends__arrow--right {
+    order: 3;
+  }
+  .our-friends__arrow--left {
+    order: 2;
+  }
+
+  .help__container {
+    padding: 40px 15px 42px;
+    gap: 44px;
+  }
+
+  .help__list {
+    gap: 30px;
+    justify-content: flex-start; 
+  }
+
+  .help__item {
+    width: 130px;
+    height: 87px;
+    row-gap: 20px;
+  }
+
+  .help__item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .help__text {
+    font-size: 15px;
+    line-height: 1.1;
+    letter-spacing: 0.06em;
+    text-align: center;
   }
 }
 
