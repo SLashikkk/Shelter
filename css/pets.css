@@ -116,6 +116,44 @@
   }
 }
 
+@media (max-width: 590px) {
+    .cards__box {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    max-width: 270px;
+    margin: 0 auto;
+    grid-gap: 30px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__container {
+    padding: 30px 20px;
+  }
+
+  .our-friends__container {
+    padding: 42px 10px 38px;
+    gap: 38px;
+  }
+
+  .our-friend__heading {
+    font-size: 25px;
+  }
+
+    .cards__box {
+    grid-template-columns: 1fr; 
+    justify-items: center; 
+    max-width: 270px; 
+    margin: 0 auto;
+    grid-gap: 30px 0; 
+  }
+
+  .pagination__list {
+    gap: 10px;
+  }
+}
+
 /*hover*/
 @media (hover: hover) {
   a:hover {

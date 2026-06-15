@@ -99,6 +99,8 @@ body::-webkit-scrollbar {
 
 .not-only__container {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   gap: 42px;
   min-height: 728px;
   padding: 0 40px;
@@ -108,7 +110,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   max-width: 460px;
-  max-height: 322px;
+  width: 100%;
   gap: 42px;
   padding-top: 163px;
 }
@@ -144,11 +146,17 @@ body::-webkit-scrollbar {
   letter-spacing: 0.06em;
 }
 
+.not-only__img {
+  max-width: 698px;
+  width: 100%;
+  align-self: flex-end;
+}
+
 .not-only__img img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
   display: block;
+  object-fit: contain;
 }
 
 .about__container {
@@ -302,19 +310,19 @@ h3 {
   background-color: var(--color-light-l);
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .in-addition__container {
   display: flex;
   justify-content: center;
+  width: 100%;
+  padding: 80px 181px 100px;
   align-items: center;
-  max-width: 915px;
   column-gap: 30px;
-  padding: 80px 182px 100px;
 }
 
 .donation__content {
-  min-width: 380px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -443,6 +451,45 @@ h3 {
 }
 
 /*responsive*/
+@media (max-width:1100px) {
+  .not-only__container {
+        flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .not-only__content {
+    padding: 0;
+  }
+.not-only__img {
+  max-width: 569px;
+  width: 100%;
+}
+
+.not-only__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+}
+
+@media (max-width: 890px) {
+  .in-addition__container {
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .donation__content {
+    max-width: 350px;
+  }
+
+  .our-friends__slider-track {
+    gap: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .header__container {
     align-items: center;
@@ -455,7 +502,7 @@ h3 {
     gap: 100px;
   }
 
-  .not-only__container .not-only__img {
+  .not-only__img {
     margin-left: auto;
   }
 
@@ -465,11 +512,6 @@ h3 {
 
   .not-only__content .btn {
     margin: 0 auto;
-  }
-
-  .not-only__img img {
-    width: 569px;
-    height: 593px;
   }
 
   .about__container {
@@ -510,6 +552,11 @@ h3 {
 
   .donation__content {
     max-width: 380px;
+    text-align: start;
+  }
+  .donation__img {
+    width: 569px;
+    margin: 0 auto;
   }
 
   .footer__container {
@@ -573,7 +620,51 @@ h3 {
   }
 }
 
-@media (max-width: 380px) {
+@media(max-width: 506px) {
+  .donation__img {
+    width: 80vw;
+    min-width: 260px; 
+    height: auto;
+    display: block;
+    object-fit: contain; 
+  }
+}
+
+
+@media(max-width:460px) {
+    .our-friends__slider {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .card {
+    order: 1;
+    width: 100%;
+  }
+
+  .our-friends__arrow--right {
+    order: 3;
+  }
+  .our-friends__arrow--left {
+    order: 2;
+  }
+}
+
+@media(max-width: 380px) {
+  .donation__card-btn {
+    width: 281px;
+  }
+    .donation__card-number {
+    font-size: 15px;
+  }
+
+  .in-addition__container {
+    padding: 35px 60px 80px;
+  }
+}
+
+@media (max-width: 320px) {
   .header__container {
     padding: 28px 20px 62px;
   }
@@ -593,6 +684,12 @@ h3 {
 
   .not-only__subheading {
     text-align: center;
+  }
+
+  .not-only__img {
+      display: flex;
+  justify-content: end;
+  align-items: center;
   }
 
   .not-only__img img {
@@ -654,7 +751,7 @@ h3 {
 
   .help__list {
     gap: 30px;
-    justify-content: flex-start; 
+    justify-content: flex-start;
   }
 
   .help__item {
@@ -673,6 +770,82 @@ h3 {
     line-height: 1.1;
     letter-spacing: 0.06em;
     text-align: center;
+  }
+
+  .in-addition__container {
+    padding: 40px 10px 38px;
+    gap: 38px;
+  }
+
+  .donation__content {
+    max-width: 300px;
+    padding: 0 13px;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .donation__bank-info {
+    letter-spacing: normal;
+  }
+
+  .donation__img {
+    width: 260px;
+    height: 135px;
+  }
+
+  .donation__card-btn {
+    width: 281px;
+  }
+
+  .donation__card-number {
+    font-size: 15px;
+  }
+
+  .donation__legal {
+    max-width: 280px;
+    text-align: justify;
+  }
+
+  .footer__container {
+    text-align: center;
+    padding: 30px 10px 0;
+    gap: 40px;
+  }
+
+  .footer__title {
+    font-size: 25px;
+    max-width: 270px;
+  }
+
+  .footer__locations {
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer__contacts {
+    padding: 0 14px;
+  }
+
+  .footer__contacts .footer__link:nth-of-type(2) {
+    padding: 4px 0 0 7px;
+  }
+
+  .footer__locations .footer__link:nth-child(3) {
+    align-self: flex-start;
+  }
+
+  .footer__text {
+    text-align: center;
+  }
+
+  .footer__locations .footer__link:nth-of-type(1) .footer__text {
+    text-align: start;
+    padding-left: 20px;
+  }
+
+  .footer__image-wrapper img {
+    width: 260px;
+    height: 269px;
   }
 }
 
