@@ -420,6 +420,7 @@ h3 {
 
   .card:hover {
     box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background-color: #fff;
     cursor: pointer;
   }
 
