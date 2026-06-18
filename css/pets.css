@@ -114,6 +114,14 @@
   .pagination {
     margin-top: 10px;
   }
+
+    .menu__link {
+    color: var(--color-dark-s);
+  }
+
+  .menu__link--active {
+    color: var(--color-light-s);
+  }
 }
 
 @media (max-width: 590px) {

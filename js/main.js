@@ -1,1 +1,2 @@
-console.log("Total self-score: 110/110");
+import { initBurger } from "./modules/burger.js";
+initBurger();

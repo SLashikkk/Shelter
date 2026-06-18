@@ -1,1 +1,0 @@
-console.log("Total self-score: 110/110");
