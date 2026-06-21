@@ -207,7 +207,7 @@ h3 {
 .our-friends__slider {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 53px;
 }
 
 .our-friends__arrow {
