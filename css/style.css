@@ -225,6 +225,7 @@ h3 {
 .our-friends__slider-track {
   display: flex;
   gap: 90px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .card {

@@ -1,5 +1,7 @@
 import { initBurger } from "./modules/burger.js";
-import { initPetsData } from "../data/getData.js";
+import { initSlider } from "./modules/slider.js";
 
 initBurger();
-initPetsData();
+initSlider();
+
+
