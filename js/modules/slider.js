@@ -25,6 +25,19 @@ export function renderSlider(petsToShow) {
   });
 }
 
+function getCardsCoutn() {
+  let width = window.innerWidth;
+  let count = 3;
+  if (width >= 1280) {
+    count = 3;
+  } else if (width >= 768) {
+    count = 2;
+  } else {
+    count = 1;
+  }
+  return count;
+}
+
 export async function initSlider() {
   allPets = await initPetsData();
   renderSlider(allPets);
