@@ -1,4 +1,7 @@
 import { initPetsData } from "./getData.js";
+import { openPopup } from "./popup.js";
+import { initPopupClose } from "./popup.js";
+
 
 let allPets = [];
 let currenPets = [];
@@ -69,6 +72,7 @@ export async function initSlider() {
   allPets = await initPetsData();
   currenPets = generateRandomPets();
   renderSlider(currenPets);
+  initPopupClose();
 }
 
 const btnPrev = document.querySelector(".our-friends__arrow--left");
