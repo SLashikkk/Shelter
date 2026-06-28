@@ -25,15 +25,9 @@ function renderPetsPage(petsToRender) {
     const name = cardClone.querySelector(".card__name");
 
     name.textContent = pet.name;
-    const originalName = pet.img.split("/").pop();
-    const lowerName = originalName.toLowerCase();
-    img.src = `img/pets-${lowerName}.png`;
+    const filename = pet.img.split("/").pop().toLowerCase();
+    img.src = `img/pets-${filename}`;
     img.alt = pet.name;
-    img.onerror = function () {
-if (img.src !== `img/pets-${originalName}.png`) {
-  img.src = `img/pets-${originalName}.png`;
-}
-    };
 
     fragment.appendChild(cardClone);
   });
