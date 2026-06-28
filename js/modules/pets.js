@@ -25,8 +25,8 @@ function renderPetsPage(petsToRender) {
     const name = cardClone.querySelector(".card__name");
 
     name.textContent = pet.name;
-    const filename = pet.img.split("/").pop();
-    img.src = `./img/pets-${filename}`;
+    const filename = pet.img.split("/").pop().toLowerCase();
+    img.src = `img/pets-${filename}`;
     img.alt = pet.name;
 
     fragment.appendChild(cardClone);
