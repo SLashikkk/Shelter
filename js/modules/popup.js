@@ -22,12 +22,12 @@ export function openPopup(pet) {
   name.textContent = pet.name;
     const originalName = pet.img.split("/").pop();
     const lowerName = originalName.toLowerCase();
-    img.src = `img/pets-${lowerName}`;
+    img.src = `img/pets-${lowerName}.png`;
     img.alt = pet.name;
     img.onerror = function () {
-      if (img.src !== `img/pets-${originalName}`) {
-        img.src = `img/pets-${originalName}`;
-      }
+if (img.src !== `img/pets-${originalName}.png`) {
+  img.src = `img/pets-${originalName}.png`;
+}
     };
 
   overlay.classList.add("active");
