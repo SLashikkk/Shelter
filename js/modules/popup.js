@@ -20,7 +20,7 @@ export function openPopup(pet) {
   parasites.textContent = pet.parasites.join(", ");
 
   name.textContent = pet.name;
-  const filename = pet.img.split("/").pop().toLowerCase();
+  const filename = pet.img.split("/").pop();
   img.src = `img/pets-${filename}`;
   img.alt = pet.name;
 
