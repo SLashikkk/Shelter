@@ -28,6 +28,7 @@ export function openPopup(pet) {
   document.body.style.overflow = "hidden";
 }
 
+
 export function initPopupClose() {
   const overlay = document.querySelector(".popup__overlay");
   const closeBtn = document.querySelector(".popup__close");

@@ -23,6 +23,11 @@ export function renderSlider(
 
   petsToShow.forEach((pet) => {
     const cardClone = template.content.cloneNode(true);
+        const cardElement =
+          cardClone.querySelector(".card") || cardClone.firstElementChild;
+        if (cardElement) {
+          cardElement.dataset.id = pet.id;
+        }
     const img = cardClone.querySelector(".card__img");
     const name = cardClone.querySelector(".card__name");
 
@@ -139,4 +144,18 @@ btnPrev.addEventListener("click", () => {
     currenPets = nextPets;
     isAnimating = false;
   }, 500);
+});
+
+
+
+sliderLine.addEventListener("click", (event) => {
+  const card = event.target.closest(".card");
+  if (!card || card.dataset.id === undefined) return;
+
+  const petId = Number(card.dataset.id);
+  const selectedPet = allPets.find((pet) => pet.id === petId);
+
+  if (selectedPet) {
+    openPopup(selectedPet);
+  }
 });
