@@ -20,8 +20,8 @@ export function openPopup(pet) {
   parasites.textContent = pet.parasites.join(", ");
 
   name.textContent = pet.name;
-  const filename = pet.img.split("/").pop();
-  img.src = `./img/pets-${filename}`;
+  const filename = pet.img.split("/").pop().toLowerCase();
+  img.src = `img/pets-${filename}`;
   img.alt = pet.name;
 
   overlay.classList.add("active");
