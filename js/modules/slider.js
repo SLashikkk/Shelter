@@ -31,7 +31,7 @@ export function renderSlider(
     const name = cardClone.querySelector(".card__name");
 
     name.textContent = pet.name;
-    const filename = pet.img.split("/").pop();
+    const filename = pet.img.split("/").pop().toLowerCase();
     img.src = `./img/pets-${filename}`;
     img.alt = pet.name;
 
