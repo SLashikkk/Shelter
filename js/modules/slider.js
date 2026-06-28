@@ -32,7 +32,7 @@ export function renderSlider(
 
     name.textContent = pet.name;
     const filename = pet.img.split("/").pop().toLowerCase();
-    img.src = `./img/pets-${filename}`;
+    img.src = `img/pets-${filename}`;
     img.alt = pet.name;
 
     fragment.appendChild(cardClone);
