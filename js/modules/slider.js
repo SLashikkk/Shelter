@@ -31,9 +31,15 @@ export function renderSlider(
     const name = cardClone.querySelector(".card__name");
 
     name.textContent = pet.name;
-    const filename = pet.img.split("/").pop().toLowerCase();
-    img.src = `img/pets-${filename}`;
+    const originalName = pet.img.split("/").pop();
+    const lowerName = originalName.toLowerCase();
+    img.src = `img/pets-${lowerName}`;
     img.alt = pet.name;
+    img.onerror = function () {
+      if (img.src !== `img/pets-${originalName}`) {
+        img.src = `img/pets-${originalName}`;
+      }
+    };
 
     fragment.appendChild(cardClone);
   });
